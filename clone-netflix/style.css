@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;   
+    background-image: url('./imgs/fundo netflix.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row;    
+    list-style-type: none;
+    text-decoration: none;
+    padding: 2em 25vw; 
+    justify-content: space-between;
+    align-items: flex-end
+
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
