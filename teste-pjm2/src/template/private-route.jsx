@@ -1,7 +1,6 @@
 import { Outlet, Navigate } from 'react-router-dom'
 import { useAuth } from '../context/auth-context'
 import { LogOut, User } from 'lucide-react'
-import styles from './private-route.module.css'
 
 export function PrivateRoute() {
     const { user, signOut } = useAuth()
