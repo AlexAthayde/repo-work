@@ -1,6 +1,7 @@
 import { Outlet, Navigate } from 'react-router-dom'
 import { useAuth } from '../context/auth-context'
 import { LogOut, User } from 'lucide-react'
+import styles from './private-route.module.css'
 
 export function PrivateRoute() {
     const { user, signOut } = useAuth()
@@ -19,10 +20,17 @@ export function PrivateRoute() {
                 </div>
             </nav>
 
-            <aside className='bg-dark'>
-                <p className='text-secondary'>usuario</p>
-                <p className='text-secondary'>locais</p>
-            </aside>
+            <div className='d-flex flex-column flex-shrink-0 p-3 text-white bg-dark wd-280' width='280'>
+                <ul className='nav nav-pills flex-column mb-auto'>
+                    <li className='nav-item'>
+                        <a href="#" className="nav-link active" aria-current="page">    
+                            HOME
+                        </a>
+                    </li>
+                </ul>
+
+
+            </div>
 
             <main className='container mx-auto'>
                 <Outlet />

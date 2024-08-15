@@ -13,10 +13,6 @@
   justify-content: center;
 }
 
-.copyRigth {
-  align-items: baseline;
-}
-
 .inputEmail {
   display: flex;
   flex-direction: column;

@@ -31,7 +31,7 @@ export function LoginUsuario() {
                         height="50" 
                     />
 
-                    <h1 className="h2 mb-3 text-primary">Efetue Login</h1>
+                    <h1 className="h3 mb-3 text-primary text-center">Efetue Login</h1>
 
                     <div className={styles.inputEmail}>
                         <label htmlFor="inputEmail">Email</label>
@@ -64,7 +64,7 @@ export function LoginUsuario() {
 
                 <p>Não possui cadastro? <Link to="/cadastro">Cadastra-se</Link></p>
                 
-                <p className="text-body-secondary fixed-bottom">lab365 &copy; 2024</p>
+                <p className="text-body-secondary position-fixed bottom-0 start-10">AAVR46 & lab365 &copy; 2024</p>
             </div>
 
             <div className={styles.imageContainer}>
