@@ -19,6 +19,11 @@ export function PrivateRoute() {
                 </div>
             </nav>
 
+            <aside className='bg-dark'>
+                <p className='text-secondary'>usuario</p>
+                <p className='text-secondary'>locais</p>
+            </aside>
+
             <main className='container mx-auto'>
                 <Outlet />
             </main>

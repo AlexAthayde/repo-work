@@ -25,13 +25,13 @@ export function LoginUsuario() {
                 <form onSubmit={handleSubmit(onSubmit)}>
 
                     <img 
-                        className="logo365" 
+                        className="mb-5" 
                         src="https://lab365-admin.hml.sesisenai.org.br/javax.faces.resource/img/logo-lab.png" 
                         alt="lab 365"  
                         height="50" 
                     />
 
-                    <h1>Efetue Login</h1>
+                    <h1 className="h2 mb-3 text-primary">Efetue Login</h1>
 
                     <div className={styles.inputEmail}>
                         <label htmlFor="inputEmail">Email</label>
@@ -58,13 +58,15 @@ export function LoginUsuario() {
                         {errors.password && <span>Senha é obrigatória</span>}
                     </div>
 
+                    <button type="submit" className="btn btn-primary mt-4 mb-4 w-100" disabled={isSubmitting}>{isSubmitting ? 'Carrengado...': 'Entrar'}</button>
 
-                    <button type="submit" className="btn btn-primary" disabled={isSubmitting}>{isSubmitting ? 'Carrengado...': 'Entrar'}</button>
-
-                    <p className="mt-5 mb-3 text-body-secondary">lab365 &copy; 2024</p>
-                    <p>Não possui cadastro? <Link to="/cadastro">Cadastra-se</Link></p>
                 </form>
+
+                <p>Não possui cadastro? <Link to="/cadastro">Cadastra-se</Link></p>
+                
+                <p className="text-body-secondary fixed-bottom">lab365 &copy; 2024</p>
             </div>
+
             <div className={styles.imageContainer}>
                 {/* <img src="./src/assets/img-login.jpeg" alt="Imagem Login" /> */}
             </div>
