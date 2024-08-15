@@ -1,0 +1,46 @@
+.loginContainer {
+  display: flex;
+  height: 100vh;
+}
+
+.formContainer {
+  width: 35%;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputEmail {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.inputSenha {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.inputS {
+  border-radius: 5px;
+}
+
+.imageContainer {
+  width: 65%;
+  background-image: url('./src/assets/img-login.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  /* Para telas menores (móveis): */
+  .login-container {
+    flex-direction: column;
+  }
+  .form-container,
+  .image-container {
+    width: 100%;
+  }
+}

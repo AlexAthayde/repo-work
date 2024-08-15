@@ -1,3 +1,25 @@
 {
-    "usuarios": []
-}
+    "usuarios": [
+      {
+        "id": 1,
+        "nome": "João da Silva",
+        "email": "joao@example.com",
+        "senha": "senha123",
+        "dataCadastro": "2023-11-22"
+      },
+      {
+        "id": 2,
+        "nome": "Maria Souza",
+        "email": "maria@example.com",
+        "senha": "senha456",
+        "dataCadastro": "2023-12-05"
+      },
+      {
+        "id": 3,
+        "nome": "Pedro Oliveira",
+        "email": "pedro@example.com",
+        "senha": "senha789",
+        "dataCadastro": "2024-01-10"
+      }
+    ]
+  }

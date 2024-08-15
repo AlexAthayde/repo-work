@@ -1,11 +1,16 @@
-import LoginUsuario from "./pages/LoginUsuario/LoginUsuario"
-
+import { BrowserRouter } from "react-router-dom"
+import { AuthProvider } from "./context/auth-context"
+import { RoutesApp } from "./routes/routes-app"
 
 function App() {
 
   return (
     <>
-      <LoginUsuario />
+      <AuthProvider>
+        <BrowserRouter>
+          <RoutesApp />
+        </BrowserRouter>
+      </AuthProvider>
     </>
   )
 }
